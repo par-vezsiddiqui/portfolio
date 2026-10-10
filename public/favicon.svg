@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="favicon-crop">
+      <circle cx="32" cy="32" r="31"/>
+    </clipPath>
+  </defs>
+  <image
+    href="/p_icon.jpeg"
+    x="0"
+    y="0"
+    width="64"
+    height="64"
+    preserveAspectRatio="xMidYMin slice"
+    clip-path="url(#favicon-crop)"
+  />
+  <circle cx="32" cy="32" r="30.5" fill="none" stroke="#285c4f" stroke-width="2"/>
+</svg>
