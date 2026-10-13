@@ -1,5 +1,5 @@
 const configuredApiUrl = import.meta.env.VITE_API_URL?.trim()
-const API_BASE_URL = (configuredApiUrl || '').replace(/\/+$/, '')
+co0.nst API_BASE_URL = (configuredApiUrl || '').replace(/\/+$/, '')
 
 async function request(endpoint, { timeoutMs = 15000, ...options } = {}) {
   const url = `${API_BASE_URL}${endpoint}`

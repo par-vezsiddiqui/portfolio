@@ -8,7 +8,7 @@ export const navItems = [
   { to: '/posts', label: 'Posts' },
   { to: '/contact', label: 'Connect with me' },
 ]
-
+ 
 export const skillGroups = [
   { name: 'Frontend', icon: Code2, level: 'Working stack', items: ['HTML5', 'CSS3', 'JavaScript ES6+', 'React.js', 'Bootstrap', 'DOM'] },
   { name: 'Backend', icon: Server, level: 'Working stack', items: ['Node.js', 'Express.js', 'REST APIs'] },

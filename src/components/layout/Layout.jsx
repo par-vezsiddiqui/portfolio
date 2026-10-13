@@ -13,7 +13,7 @@ export function ScrollManager() {
   }, [pathname])
   return null
 }
-
+ 
 export default function Layout() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [query, setQuery] = useState('')
