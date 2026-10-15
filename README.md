@@ -1,31 +1,28 @@
-﻿# Parvez Portfolio Platform
+# Parvez Portfolio
 
-This workspace contains two independently manageable applications:
-
-- `frontend/` - React/Vite SPA for the portfolio and EZ Foundation experience.
-- `backend/` - Express API and SQLite persistence for EZ Foundation.
-
-They are intentionally separated so each folder can be copied into its own Git repository and deployed independently.
+Personal portfolio single page application built with React, Vite and Tailwind CSS.
 
 ## Local development
 
-Terminal 1:
-
 ```powershell
-Set-Location .\backend
-npm install
-Copy-Item .env.example .env
-npm start
-```
-
-Terminal 2:
-
-```powershell
-Set-Location .\frontend
 npm install
 npm run dev
 ```
 
-The frontend uses `http://localhost:8787/api` by default. Set `VITE_API_URL` in `frontend/.env` when the API is deployed elsewhere.
+The dev server runs on http://localhost:5173.
 
-See [frontend/README.md](./frontend/README.md) and [backend/README.md](./backend/README.md) for application-specific commands.
+## Scripts
+
+- `npm run dev` - start the Vite dev server
+- `npm run build` - production build into `dist/`
+- `npm run preview` - serve the production build locally
+- `npm run lint` - run ESLint
+
+## Configuration
+
+Copy `.env.example` to `.env` and adjust the values. `VITE_API_URL` points the app at the
+EZ Foundation API when one is deployed.
+
+## Content
+
+Profile details, skills and the project list live in `src/data.js`.
